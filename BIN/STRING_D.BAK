@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  char str[100];
+  int i,c=0;
+  int a,b;
+  clrscr();
+  printf("Enter any string \( Including blankspaces and digits \)::\n\t");
+  scanf("%s",str);
+
+  for(i=0;i<=99;i++)
+  {
+   a=str[i];
+   if(a<=71 && a>=60)
+   {
+     c=c+1;
+   }
+  }
+   printf("\nNumber of integers in the given string:\t%d",c);
+  getch();
+}

@@ -1,0 +1,63 @@
+#include<stdio.h>
+#include<conio.h>
+
+void push();
+void print();
+void check();
+
+int n,m,id,i;
+char wans[10];
+char op1[10];
+
+void main()
+{
+   clrscr();
+   printf("\nEnter the number of students \(1 - 5\)::\t");
+   scanf("%d",&n);
+   printf("\nEnter the set of correct answers \(10 Consecutive Characters\)::\t");
+   scanf("%s",wans);
+   check(wans);
+   printf("\n Thank you for all the informations.");
+   printf("\n\n Press::");
+   printf("\n 1. Insert a value");
+   printf("\n 2. Exit");
+   printf("\n 3. Print the report card\n\t");
+   scanf("%d",&m);
+   switch(m)
+   {
+     case 1:push();
+       break;
+     case 2: exit(0);
+	break;
+     case 3: print();
+	break;
+     default: printf("\n\t Invalid Selection");
+   }
+
+   getch();
+}
+
+void push()
+{
+   printf("\n Enter the student ID\t");
+   scanf("%d",&id);
+
+   printf("\n Enter the choices by the candidates\t");
+   scanf("%s",op1);
+   check(op1);
+}
+
+void print(){}
+
+void check(char arr[10])
+{
+ for(i=0;i<=9;i++)
+   {
+     if(arr[i]!='A' && arr[i]!='B' && arr[i]!='C' && arr[i]!='D')
+     {
+       printf("\n Invalid Entery");
+       getch();
+       exit(0);
+     }
+   }
+}

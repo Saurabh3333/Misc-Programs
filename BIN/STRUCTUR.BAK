@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+   struct school
+   { int ledger;
+     char name[50];
+     char sec;
+     int mobile;
+     };
+
+     struct lfname
+     { char first[25];
+       char last[25];
+       };
+    ledger.school=55623;
+    sec.school='A';
+    mobile.school=9507741996;
+    name.school=first.lfname + last.lfname;
+
+    getch();
+
+
+}

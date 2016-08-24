@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+void main()
+{
+  int i,j,n,k=4;
+  int m,p;
+  clrscr();
+  for(i=0;i<=4;i++)
+  {
+    for(j=1;j<=k;j++)
+    {
+     printf(" ");
+    }
+    k--;
+    n=pow(11,i);
+
+    while(n>0)
+    {
+      m=n%10;
+      printf("%d",m);
+      printf(" ");
+      n=n/10;
+    }
+    printf("\n");
+  }
+  getch();
+}
